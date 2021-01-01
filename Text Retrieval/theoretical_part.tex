@@ -1,0 +1,97 @@
+\section{Problem 1}
+
+Solution: c. and d. shouldn't be conflated.
+
+Stemming refers to a crude heuristic process that chops off the ends of words, given that they come from the same form of word. This is actually not the case in c. and d. In c., the word \textit{marketing} means \textit{the activity of presenting, advertising and selling a company’s products or services in the best possible way}, while the word \textit{market} means \textit{an occasion when people buy and sell goods; the open area or building where they meet to do this}\footnote{The explanations of \textit{marketing} and \textit{market} come from Oxford Learner's Dictionary.}. Therefore, they are completely different in meaning and their relationship is restricted to the process of revolution of language, and not in language analysis.
+
+\section{Problem 2}
+
+Solution:
+\begin{enumerate}[a.]
+    \item 
+    \begin{quote}
+        \begin{tabular}{|c|c|c|c|c|}
+        \hline
+        \ &\textbf{Doc 1}&\textbf{Doc 2}&\textbf{Doc 3}&\textbf{Doc 4}\\
+        \hline
+        \textbf{new}&1&0&0&1\\
+        \hline
+        \textbf{home}&1&1&1&1\\
+        \hline
+        \textbf{sale}&1&1&1&1\\
+        \hline
+        \textbf{top}&1&0&0&0\\
+        \hline
+        \textbf{forecast}&1&0&0&0\\
+        \hline
+        \textbf{rise}&0&1&0&1\\
+        \hline
+        \textbf{in}&0&1&1&0\\
+        \hline
+        \textbf{july}&0&1&1&1\\
+        \hline
+        \textbf{increase}&0&0&1&0\\
+        \hline
+        \end{tabular}
+    \end{quote}
+
+    \item
+    \begin{quote}
+        \begin{tabular}{rcl}
+        new &\rightarrow& \fbox{1} \rightarrow \fbox{4} \\
+        home &\rightarrow& \fbox{1} \rightarrow \fbox{2} \rightarrow \fbox{3} \rightarrow \fbox{4} \\
+        sale &\rightarrow& \fbox{1} \rightarrow \fbox{2} \rightarrow \fbox{3} \rightarrow \fbox{4} \\
+        top &\rightarrow& \fbox{1} \\
+        forecast &\rightarrow& \fbox{1} \\
+        rise &\rightarrow& \fbox{2} \rightarrow \fbox{4} \\
+        in &\rightarrow& \fbox{2} \rightarrow \fbox{3} \\
+        july &\rightarrow& \fbox{2} \rightarrow \fbox{3} \rightarrow \fbox{4} \\
+        increase &\rightarrow& \fbox{3}
+        \end{tabular}
+    \end{quote}
+
+    
+    \item 
+    \begin{enumerate}[i.]
+        \item Doc 2, Doc 4
+        \item Doc 1, Doc 2, Doc 4
+    \end{enumerate}
+\end{enumerate}
+
+\section{Problem 3}
+
+\begin{quote}
+    \begin{tabular}{|r|c|c|c|c|}
+        \hline
+        \textbf{term}&\textbf{DocID}&\textbf{tf}&\textbf{idf}&\textbf{tf-idf} \\
+        \hline
+        \multirow{3}{*}{\textbf{car}}
+            &1&0.613636&1.65&1.0125 \\
+            \cline{2-5}
+            &2&0.057143&1.65&0.094286 \\
+            \cline{2-5}
+            &3&0.342857&1.65&0.565714 \\
+        \hline
+        \multirow{3}{*}{\textbf{auto}}
+            &1&0.068182&2.08&0.141818 \\
+            \cline{2-5}
+            &2&0.471429&2.08&0.980571 \\
+            \cline{2-5}
+            &3&0&2.08&0 \\
+        \hline
+        \multirow{3}{*}{\textbf{insurance}}
+            &1&0&1.62&0 \\
+            \cline{2-5}
+            &2&0.471429&1.62&0.763714 \\
+            \cline{2-5}
+            &3&0.414286&1.62&0.671143 \\
+        \hline
+        \multirow{3}{*}{\textbf{best}}
+            &1&0.318182&1.5&0.477273 \\
+            \cline{2-5}
+            &2&0&1.5&0 \\
+            \cline{2-5}
+            &3&0.242857&1.5&0.364286 \\
+        \hline
+    \end{tabular}
+\end{quote}
